@@ -40,3 +40,17 @@ This command will download the necessary Docker images, build the application, a
 To stop the application, use:
 
 `docker-compose stop`
+
+## Running Tests
+
+1. **Ensure the Application is Running**:
+
+Make sure the application containers are up and running. If not, start them using:
+
+`docker-compose up -d`
+
+2. **Execute the Tests**:
+
+Run the tests by executing the following command:
+
+`docker-compose exec python manage.py test`

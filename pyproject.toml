@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "gap_tech_test"
+version = "0.1.0"
+description = ""
+authors = ["Juan Felipe Rayo <jfrayop@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10.3"
+Django = "^3.2"
+djangorestframework = "^3.14.0"
+python-dateutil = "^2.8.2"
+freezegun = "^1.2.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

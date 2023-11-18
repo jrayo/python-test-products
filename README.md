@@ -21,7 +21,7 @@ First, clone the repository to your local machine using:
 
 Change to the project directory:
 
-`cd python-test-products``
+`cd python-test-products`
 
 3. **Start the Application**:
 

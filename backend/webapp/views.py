@@ -23,4 +23,47 @@ class TopRatedAPIView(APIView):
 
 
 def home_view(request):
-    return HttpResponse("Welcome to the Home Page")
+    content = """
+        <html>
+            <head>
+                <title>Product API Home</title>
+                <style>
+                    body { 
+                        font-family: Arial, sans-serif; 
+                        text-align: center; 
+                        margin-top: 3em;
+                        background-color: #f5f5f5
+                    }
+                    h1 { 
+                        color: #333; 
+                    }
+                    ul { 
+                        padding: 0; 
+                    }
+                    li { 
+                        margin: 10px 0; 
+                    }
+                    a { 
+                        text-decoration: none; 
+                        color: darkblue; 
+                    }
+                    a:hover { 
+                        color: blue; 
+                    }
+                    p, ul {
+                        text-align: left;
+                        margin: 2em;
+                    }
+                </style>
+            </head>
+            <body>
+                <h1>Welcome to the Product API Home Page</h1>
+                <p>Use the following links to access the API endpoints:</p>
+                <ul>
+                    <li><a href="/api/products">All Products API</a></li>
+                    <li><a href="/api/products/top-rated">Top Rated Products API</a></li>
+                </ul>
+            </body>
+        </html>
+    """
+    return HttpResponse(content)
